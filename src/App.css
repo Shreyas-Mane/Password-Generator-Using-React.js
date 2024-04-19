@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+     
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  /* background-color: #9dbe91; */
+  background: url(./assets/3415325.jpg);
+  background-size: cover;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+div#root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* background-color: #c7acac; */
+  background: url(./assets/dark-geometric-background-with-copy-space.jpg);
+  background-size: cover;
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 17px 17px 5px 1px rgba(54, 54, 54, 0.2);
+}
+
+.wrapper-box {
+  padding: 30px;
+}
+.heading{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.generator{
+  color: blueviolet;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.word__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
 }
+
+.generate-button {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(61, 131, 211);
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.password-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-box > input[type='text'] {
+  width: 70%;
+  height: 35px;
+  margin-right: 10px;
+  font-size: 16px;
+  padding-left: 10px;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+button.copy-button {
+  display: block;
+  width: 25%;
+  cursor: pointer;
+  border: 0px;
+  font-size: 14px;
+  font-weight: bolder;
+  border-radius: 5px;
+  background-color: rgb(61, 131, 211);
+}
+
+.word__box input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+.word__box label {
+  font-weight: 500;
+  color: white;
+}
+
+input[type='number'] {
+  width: 60px;
+  height: 20px;
+}
+
